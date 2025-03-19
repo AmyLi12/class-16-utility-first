@@ -1,11 +1,11 @@
 export default function Card({ imgUri, title, children }) {
 
   return (
-    <div>
-      <img src={imgUri} alt="" />
+    <div className="bg-slate-200 max-w-xs p-4 rounded-lg space-y-3">
+      <img className="rounded-sm" src={imgUri} alt="" />
 
-      <div>
-        <h3>{title}</h3>
+      <div className="space-y-2">
+        <h3 className="text-xl font-semibold">{title}</h3>
         <p>
           {children}
         </p>
